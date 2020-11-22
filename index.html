@@ -1,0 +1,225 @@
+<html><head>
+    <meta charset="utf-8">
+    <title>personalpage</title>
+
+    
+<script>
+	a=0;
+	function change0(){
+	  a++;
+	  a=a%3;
+	  if(a==0)
+	  {
+	    document.getElementById("spd1").src="https://33.media.tumblr.com/tumblr_ma97m64In61rfpxhzo6_400.gif";
+	   document.getElementById("spd").innerHTML='慢慢俠';
+	  }else if(a==1)
+	  {
+	    document.getElementById("spd1").src="https://i.imgur.com/dqvO5x4.gif";
+	   document.getElementById("spd").innerHTML='普普俠';
+	  }
+	  else if(a==2)
+	  {
+	    document.getElementById("spd1").src="https://i.imgur.com/UfXTSPn.gif";
+	   document.getElementById("spd").innerHTML='快快俠';
+	  }
+
+
+	}
+	</script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+<script>
+	cnt_hbd=0;
+	function angel(){
+		cnt_hbd%=2;
+  	if(cnt_hbd==0)
+  	{
+  		$("hbd1117").show();
+  	}else if(cnt_hbd==1)
+  	{
+  		$("hbd1117").hide();
+  	}
+    
+    cnt_hbd++;
+
+	}
+;
+</script>
+
+<script>
+b=0;
+function change1(){
+  b++;
+  b=b%2;
+  if(b==0)
+  {
+    document.getElementById("fire1").src="https://i.imgur.com/0OEdK0E.png";
+   document.getElementById("fire").innerHTML='火山大隊長';
+  }else if(b==1)
+  {
+    document.getElementById("fire1").src="https://i.imgur.com/owfcxiy.png";
+   document.getElementById("fire").innerHTML='火山爆發';
+  }
+
+}
+</script>
+
+<script>
+c=0;
+function change2(){
+  c++;
+  c=c%2;
+  if(c==0)
+  {
+    document.getElementById("rubber1").src="https://i.imgur.com/76egmJX.png";
+   document.getElementById("rubber").innerHTML='超強彈力橡皮人';
+  }else if(c==1)
+  {
+    document.getElementById("rubber1").src="https://i.imgur.com/rWIJ3VK.png";
+   document.getElementById("rubber").innerHTML='我終於可以摸到我的腳趾頭了';
+  }
+
+}
+</script>
+
+<script>
+d=0;
+function change3(){
+  d++;
+  d=d%2;
+  if(d==0)
+  {
+    document.getElementById("invisible1").src="https://i.imgur.com/VY5BcjC.png";
+   document.getElementById("invisible").innerHTML='隱形美眉';
+  }else if(d==1)
+  {
+    document.getElementById("invisible1").src="https://i.imgur.com/y8PPex1.png";
+   document.getElementById("invisible").innerHTML='隱形';
+  }
+}
+</script>
+
+
+
+<script>
+			$(document).ready( function(){
+                 
+				$("#yes").click( function(){
+					$("body").removeClass("darkness");
+					$("body").removeClass("fishing");
+					$("body").removeClass("starburst");
+                    $("hbd1117").addClass("whi");
+					// $("body").css("background-color","black");
+					$("body").addClass("darkness");
+					// $("body").css("background-image","url(https://i.imgur.com/dq3cEDT.gif)");
+					
+				});
+
+				$("#no").click( function(){
+					// $("body").css("background-color","white");
+					$("body").removeClass("darkness");
+					$("body").removeClass("fishing");
+					$("body").removeClass("starburst");
+					$("hbd1117").removeClass("whi");
+				});
+				$("#star").click( function(){
+					$("body").removeClass("darkness");
+					$("body").removeClass("fishing");
+					$("body").removeClass("starburst");
+					$("body").addClass("starburst");
+					// $("body").css("background-image","url(https://i.imgur.com/UfXTSPn.gif)");
+					
+				});
+				$("#fish").click( function(){
+					$("body").removeClass("darkness");
+					$("body").removeClass("fishing");
+					$("body").removeClass("starburst");
+					$("body").addClass("fishing");
+					// $("body").css("background-image","url(https://i.imgur.com/dq3cEDT.gif)");
+					
+				});
+				$("#gf").click( function(){
+					f=Math.floor(Math.random()*5);
+					if(f==0)
+					{
+						document.getElementById("gf1").src="https://i.imgur.com/SqbjVN2.png";
+
+					}else if(f==1)
+					{
+						document.getElementById("gf1").src="https://i.imgur.com/eOvXMsm.jpg";
+					}else if(f==2)
+					{
+						document.getElementById("gf1").src="https://i.imgur.com/N4klqVr.jpg";
+					}else if(f==3)
+					{
+						document.getElementById("gf1").src="https://i.imgur.com/RVhIJGi.png";
+					}else if(f==4)
+					{
+						document.getElementById("gf1").src="";
+					}
+					
+					
+				});
+			});
+  </script>
+
+
+
+  </head>
+<body class="" style="">
+	<style>
+    .whi{
+        color: white;
+    }
+	.darkness{
+	background-color: black;
+}
+	.fishing{
+		background-image:url(https://i.imgur.com/dq3cEDT.gif)
+	}
+	.starburst{
+		background-image:url(https://i.imgur.com/UfXTSPn.gif)
+	}
+</style>
+    <style>
+    .ma{
+        margin-right: 200px;
+        }
+    </style>
+    <a href="#spd">黑衣劍士</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#fire">火山大隊長</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="#rubber"> 超強彈力橡皮人</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="#invisible"> 隱形美眉</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<home id="home" style="color:white;">沒錯 你找到我了</home>
+	<button id="yes">背景變黑</button>
+ 	<button id="no">背景變白</button>
+ 	<button id="fish">釣魚</button>
+ 	<button id="star">開始星爆</button>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+        
+    <p style=""></p>
+    	<button id="gf">(可能會重複)點這個按鈕看你抽到哪個女友==</button>
+    	<img alt="不是圖死了 是你沒有女友" src="https://i.imgur.com/vwtmSHs.jpg" id="gf1">
+<p style=""></p>
+
+<p></p>
+<p>以下點擊圖片的話 圖片跟文字皆會發生改變(要等一下)</p>
+        <p id="spd" style="">慢慢俠</p>
+        <img src="https://33.media.tumblr.com/tumblr_ma97m64In61rfpxhzo6_400.gif" id="spd1" onclick="change0()">
+        <p id="fire" style="">火山爆發</p>
+        <img id="fire1" height="194" width="300" src="https://i.imgur.com/owfcxiy.png" onclick="change1()">
+        <p id="rubber" style="">超強彈力橡皮人</p>
+        <img id="rubber1" src="https://i.imgur.com/76egmJX.png" width="259" height="194" onclick="change2()">
+        <p id="invisible" style="">隱形美眉</p>
+        <img id="invisible1" height="194" width="259" src="https://i.imgur.com/VY5BcjC.png" onclick="change3()"><a href="#home">回到最上面點我</a>
+
+
+
+
+</body></html>
